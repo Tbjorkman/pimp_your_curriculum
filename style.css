@@ -1,0 +1,110 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+
+}
+header
+{
+    border: 1px solid;
+    width: 100vw;
+    min-height: 5em;
+}
+main
+{
+    border: 1px solid;
+    width: 100vw;
+}
+aside
+{
+    border: 1px solid;
+    width: 100vw;
+    min-height: 30em;
+}
+section
+{
+    border: 1px solid;
+    width: 100vw;
+    min-height: 10em;
+}
+footer
+{
+    border: 1px solid;
+    width: 100vw;
+    min-height: 5em;
+}
+nav
+{
+    width: 100%;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+nav ul
+{
+    width: 100%;
+    list-style: none;
+}
+nav ul li a
+{
+    text-decoration: none;
+}
+nav ul li ul li
+{
+    position: absolute;
+    display: none;
+
+}
+nav ul li ul li a
+{
+    text-decoration: none;
+}
+nav ul li ul li a:hover
+{
+    background-color: azure;
+}
+.show
+{
+    display:block;
+}
+/*nav
+{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+nav ul
+{
+    width: 100%;
+    border: 1px solid;
+    list-style: none;
+}
+nav ul li
+{
+    display: block;
+    float: left;
+    position: relative;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: black;
+}
+nav li ul li
+{
+    border: 1px solid;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+nav ul li ul li a
+{
+    text-decoration: none;
+    display: block;
+    color: black;
+}*/
