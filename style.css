@@ -133,45 +133,307 @@ table
 {
     font-size: 0.8em;
 }
-/*nav
+tr:nth-child(even)
+{
+    background-color: azure;
+}
+
+/********************* STYLING FOR MIN-WIDTH 600 PIXELS **************************/
+
+@media (min-width:600px){
+    body
+    {
+        font-family: "Arial Rounded MT Bold", cursive;
+    }
+    h1
+    {
+        font-size: medium;
+        font-weight: 400;
+    }
+    h2
+    {
+        font-weight: 300;
+    }
+    h3
+    {
+        font-weight: 200;
+    }
+    p
+    {
+        font-size: 1em;
+        font-weight: lighter;
+    }
+    header
+    {
+        border: 1px solid;
+        width: 100vw;
+        min-height: 5em;
+    }
+    main
+    {
+        border: 1px solid;
+        width: 100vw;
+        display: grid;
+
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+
+                "as sect"
+                "as sect"
+                "ft ft"
+    }
+
+
+    aside
+    {
+        grid-area: as;
+        border: 1px solid;
+        width: 23vw;
+        float: left;
+    }
+    section
+    {
+        grid-area: sect;
+        border: 1px solid;
+        width: 76vw;
+
+
+    }
+
+    .info{
+
+        width: 60%;
+        height: 40%;
+
+        /*    background-color: red;*/
+        margin: auto;
+
+        /*    border: 3px solid black;*/
+        padding: 60px;
+    }
+    .left{
+        float: left;
+    }
+    .right{
+        float: right;
+    }
+    .next {
+
+        margin: 10px;
+        width: 80px;
+        height: 20px;
+
+
+    }
+    .previous{
+
+        margin: 10px;
+        width: 80px;
+        height: 20px;
+
+    }
+    button{
+        background-color: blue;
+        color:white;
+
+
+    }
+    footer
+    {
+        grid-area: ft;
+        border: 1px solid;
+        width: 100vw;
+
+    }
+    nav
+    {
+        width: 100%;
+        display: block;
+        position: relative;
+        cursor: pointer;
+    }
+    nav ul
+    {
+        width: 100%;
+        list-style: none;
+    }
+    nav ul li
+    {
+        padding: 1em;
+    }
+    nav ul li a
+    {
+        text-decoration: none;
+
+    }
+    nav ul li ul li
+    {
+        /*position: absolute;
+        display: none;*/
+        padding: 1em;
+    }
+    nav ul li ul li a
+    {
+        text-decoration: none;
+
+    }
+    nav ul li ul li a:hover
+    {
+        background-color: azure;
+    }
+    .show
+    {
+        display:block;
+    }
+}
+
+/************************** STYLING FOR MIN-WIDTH 1024 **************************/
+
+@media (min-width:1024px){
+    * {
+        box-sizing: border-box;
+    }
+    body
+    {
+        font-family: "Arial Rounded MT Bold", cursive;
+
+
+    }
+    h1
+    {
+        font-size: medium;
+        font-weight: 400;
+    }
+    h2
+    {
+        font-weight: 300;
+    }
+    h3
+    {
+        font-weight: 200;
+    }
+    p
+    {
+        font-size: 1em;
+        font-weight: lighter;
+    }
+    header
+    {
+        border: 1px solid;
+        width: 100vw;
+        min-height: 5em;
+    }
+    main
+    {
+        border: 1px solid;
+        width: 100vw;
+        display: grid;
+
+        grid-template-columns: 1fr 2fr 2fr ;
+        grid-template-areas:
+
+                "as sect sect"
+                "as sect sect "
+                "ft ft ft"
+    }
+
+
+aside
+{
+    grid-area: as;
+    border: 1px solid;
+    width: 30vw;
+    float: left;
+}
+section
+{
+    grid-area: sect;
+    border: 1px solid;
+    width: 70vw;
+
+
+}
+
+.info{
+    width: 80%;
+    height: 60%;
+
+     /* background-color: red;*/
+    margin: auto;
+
+    /* border: 3px solid black;*/
+    padding: 10px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.next {
+
+    margin: 10px;
+    width: 80px;
+    height: 20px;
+
+
+}
+.previous{
+
+    margin: 10px;
+    width: 80px;
+    height: 20px;
+
+}
+button{
+    background-color: blue;
+    color:white;
+}
+footer
+{
+    grid-area: ft;
+    border: 1px solid;
+    width: 100vw;
+
+}
+nav
 {
     width: 100%;
-    height: auto;
-    cursor: pointer;
+    display: block;
     position: relative;
-    display: inline-block;
+    cursor: pointer;
 }
 nav ul
 {
     width: 100%;
-    border: 1px solid;
     list-style: none;
 }
 nav ul li
 {
-    display: block;
-    float: left;
-    position: relative;
+    padding: 1em;
 }
 nav ul li a
 {
     text-decoration: none;
-    color: black;
+
 }
-nav li ul li
+nav ul li ul li
 {
-    border: 1px solid;
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+   /* position: absolute;
+    display: none;*/
+    padding: 1em;
 }
 nav ul li ul li a
 {
     text-decoration: none;
-    display: block;
-    color: black;
-}*/
-@media (min-width: 600px) {
 
+}
+nav ul li ul li a:hover
+{
+    background-color: azure;
+}
+.show
+{
+    display:block;
+}
 }
