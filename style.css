@@ -4,7 +4,7 @@
 }
 body
 {
-    font-family: "Arial Rounded MT Bold", cursive;
+
 }
 h1
 {
@@ -24,6 +24,9 @@ p
     font-size: 1em;
     font-weight: lighter;
 }
+/******************* classes *****************/
+
+/******************* classes *****************/
 header
 {
     border: 1px solid;
@@ -45,7 +48,7 @@ section
 {
     border: 1px solid;
     width: 100vw;
-    min-height: 10em;
+    min-height: 20em;
 }
 footer
 {
@@ -132,3 +135,6 @@ nav ul li ul li a
     display: block;
     color: black;
 }*/
+@media (min-width: 600px) {
+
+}
