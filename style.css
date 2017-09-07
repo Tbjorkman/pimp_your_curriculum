@@ -128,6 +128,11 @@ nav ul li ul li a:hover
 {
     display:block;
 }
+/********************* table **************************/
+table
+{
+    font-size: 0.8em;
+}
 /*nav
 {
     width: 100%;
