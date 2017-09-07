@@ -18,3 +18,19 @@ window.onclick = function(event) {
         }
     }
 };
+
+//FUNCTION SHOWHIDE IS FOR THE ARTICLE ID'S
+
+function showHide(showID) {
+
+    if (document.getElementById(showID)) {
+        if (document.getElementById(showID+'-show').style.display !== 'none') {
+            document.getElementById(showID+'-show').style.display = 'none';
+            document.getElementById(showID).style.display = 'block';
+        }
+        else {
+            document.getElementById(showID+'-show').style.display = 'inline';
+            document.getElementById(showID).style.display = 'none';
+        }
+    }
+}
