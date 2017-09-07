@@ -25,8 +25,40 @@ p
     font-weight: lighter;
 }
 /******************* classes *****************/
+.left
+{
+    float: left;
+}
+.right
+{
+    float: right;
+}
+.showLink
+{
+    display: block;
+}
+.more
+{
+    display: none;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+a.showLink, a.hideLink
+{
+    text-decoration: none;
+    color: #36f;
+    padding-left: 0.8em;
+}
+a.hideLink
+{
+    background-color: azure;
+}
+a.showLink:hover, a.hideLink:hover
+{
+    background-color: azure;
+}
 
-/******************* classes *****************/
+/******************* main sections *****************/
 header
 {
     border: 1px solid;
@@ -48,7 +80,7 @@ section
 {
     border: 1px solid;
     width: 100vw;
-    min-height: 20em;
+    height: auto;
 }
 footer
 {
