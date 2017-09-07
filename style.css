@@ -109,6 +109,11 @@ nav ul li a
     text-decoration: none;
 
 }
+nav ul ul
+{
+    position: absolute;
+    display: none;
+}
 nav ul li ul li
 {
     /*position: absolute;
@@ -120,9 +125,10 @@ nav ul li ul li a
     text-decoration: none;
 
 }
-nav ul li ul li a:hover
+nav ul li:hover > ul
 {
     background-color: azure;
+    display: block;
 }
 .show
 {
